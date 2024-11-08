@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="icon" href="./images/logo-black.svg">
+    <link rel="icon" href="./images/logo-black.svg" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -15,9 +15,7 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li
-            class="header__links-list-item header__links-list-item_no-bullit header__link_active"
-          >
+          <li class="header__links-list-item header__links-list-item_no-bullit">
             <a class="header__link header__link_active" href="#">главная</a>
           </li>
           <li class="header__links-list-item">
@@ -38,14 +36,12 @@
       </div>
 
       <address class="address header__address">
-        <a href="tel:+99995555555"
-          ><span style="letter-spacing: 0.2px">+9 999 555 5555</span></a
-        >
-        <br />
-        <a href="mailto:info@sobaka.ge"
-          ><span style="letter-spacing: 0.2px">info@sobaka.ge</span></a
-        ><br />
-        <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        <p class="no-letter-spacing">
+          наб. Принсенграхт 263-<br />265, Амстердам
+        </p>
       </address>
     </header>
     <!-- Конец шапки сайта -->
@@ -73,10 +69,13 @@
           >
         </h1>
         <div class="cover__description">
-          <h2 class="cover__description-text">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
-          </h2>
-          <button class="bet-button" onclick="window.location.href='#'">Сделать ставку</button>  <!-- почему href нельзя укаазывать для ссылки? -->
+          </p>
+          <button class="bet-button" onclick="window.location.href='#'">
+            Сделать ставку
+          </button>
+          <!-- почему href нельзя укаазывать для ссылки? -->
         </div>
       </section>
       <!-- Конец 1 секции сайта -->
@@ -86,9 +85,9 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a href="" class="card-link">
-              <article class="card">
+              <article class="card card_type_film">
                 <div class="overlay"></div>
-                <div class="card_type_film"></div>
+
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -102,9 +101,8 @@
           </li>
           <li class="lots__card-list-item">
             <a href="" class="card-link">
-              <article class="card">
+              <article class="card card_type_book">
                 <div class="overlay"></div>
-                <div class="card_type_book"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -121,9 +119,9 @@
           </li>
           <li class="lots__card-list-item">
             <a href="" class="card-link">
-              <article class="card">
+              <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <div class="card_type_picture"></div>
+
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -137,7 +135,9 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="lots__look-more-link">посмотреть больше</a>
+        <a href="#" target="_blank" class="lots__look-more-link"
+          >посмотреть больше</a
+        >
       </section>
       <!-- Конец 2 секции сайта -->
       <!-- 3 секция сайта -->
@@ -153,39 +153,19 @@
           <div class="about_overview">
             <h2 class="about__title">Об аукционе</h2>
             <p class="about__text">
-              <span style="letter-spacing: 0.2px"
-                >Здесь вы не встретите очередное </span
-              >пафосное собрание невероятно дорогого антиквариата.<span
-                style="letter-spacing: 0.4px"
-              >
-                Наши</span
-              ><span style="letter-spacing: 0.2px"> лоты вообще не</span> должны
-              <span style="letter-spacing: -0.2px">были попасть</span> ни на
-              один <span style="letter-spacing: 0.2px">аукцион.</span> Потому
-              что кому нужен
-              <span style="letter-spacing: 0.6px">дневник</span>
-              девочки-подростка или картина, которую может
-              <span style="letter-spacing: 0.4px">нарисовать</span>
-              <span style="letter-spacing: 0.2px">даже</span> ребёнок? Кому
-              нужны
-              <span style="letter-spacing: 0.2px"
-                >все эти странные вещи, созданные</span
-              >
-              любителями?
+              Здесь вы не встретите очередное пафосное собрание невероятно
+              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+              на один аукцион. Потому что кому нужен дневник девочки-подростка
+              или картина, которую может нарисовать даже ребёнок? Кому нужны все
+              эти странные вещи, созданные любителями?
             </p>
-            <p class="about__text no-indentation">
+            <p class="about__text no-indentation">  <!-- no-indentation чтобы не было отступа снизу и справа как в макете -->
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
-              непонятые. Когда-то
-              <span style="letter-spacing: 0.8px">они</span> казались просто
-              <span style="letter-spacing: 0.2px">неудачными.</span> Но,
-              несмотря <br />на критику, кажущуюся простоту или сложность,
-              сейчас без этих лотов невозможно
-              <span style="letter-spacing: 0.2px"
-                >представить современную культуру.</span
-              >
-              Когда в эти вещи не верил никто, продолжали верить
-              <span style="letter-spacing: 0.2px">их создатели.</span> И сейчас
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              <br />на критику, кажущуюся простоту или сложность, сейчас без
+              этих лотов невозможно представить современную культуру. Когда в
+              эти вещи не верил никто, продолжали верить их создатели. И сейчас
               эти лоты стали культовыми.
             </p>
           </div>
@@ -195,15 +175,13 @@
     </main>
     <!-- Начало Футера-->
     <footer class="footer">
-      <address class="address header__address">
-        <a href="tel:+99995555555"
-          ><span style="letter-spacing: 0.2px">+9 999 555 5555</span></a
-        >
-        <br />
-        <a href="mailto:info@sobaka.ge"
-          ><span style="letter-spacing: 0.2px">info@sobaka.ge</span></a
-        ><br />
-        <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
+      <address class="address footer__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        <p class="no-letter-spacing">
+          наб. Принсенграхт 263-<br />265, Амстердам
+        </p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">

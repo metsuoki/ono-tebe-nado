@@ -22,7 +22,7 @@
 }
 
 .header__link {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -47,16 +47,18 @@
 }
 
 .address {
-  width: 240px;
+  width: 100%;
+  max-width: 240px;
   justify-self: end;
 }
 
 .header__address {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 135%; /* 135% */
+  letter-spacing: 0.2px;
 }
 
 .cover {
@@ -77,12 +79,12 @@
 
 .cover__title {
   margin-bottom: 135px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .aligned-text {
   display: block;
   color: #fff;
-  font-family: Raleway;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -93,7 +95,8 @@
 }
 
 .aligned-text_center {
-  margin-left: 286px;
+  text-align: center; /* Сначала было так, но из-за того что по макету не подходит написал в пикселях */
+  /* margin-left: 286px; */
   line-height: 100%;
 }
 
@@ -119,7 +122,6 @@
 
 .cover__description-text {
   color: #fff;
-  font-family: Raleway;
   font-size: 22px;
   word-spacing: 19.1px;
   font-style: normal;
@@ -132,7 +134,7 @@
 .bet-button {
   color: #fff;
   text-align: center;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -155,7 +157,7 @@
 
 .lots__heading {
   color: #000;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -166,6 +168,7 @@
 }
 
 .lots__card-list {
+  flex-wrap: wrap;
   list-style: none;
   display: flex;
   gap: 25px;
@@ -184,15 +187,14 @@
 .card {
   display: flex;
   flex-direction: column;
-  position: relative;
-  height: 563px;
+  min-height: 563px;
   justify-content: space-between;
   padding: 51px 40px 48px;
 }
 
 .card__title {
   color: #fff;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -203,7 +205,7 @@
 
 .card__text {
   color: #fff;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -212,28 +214,25 @@
 
 .card_type_film {
   background: url(../images/card-lot-01.jpg) no-repeat center/cover;
-  position: absolute;
-  inset: 0;
+  position: relative;
   z-index: -2;
 }
 
 .card_type_book {
   background: url(../images/card-lot-02.jpg) no-repeat center/cover;
-  position: absolute;
-  inset: 0;
+  position: relative;
   z-index: -2;
 }
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg) no-repeat center/cover;
-  position: absolute;
-  inset: 0;
+  position: relative;
   z-index: -2;
 }
 
 .lots__look-more-link {
   color: #000;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -248,7 +247,6 @@
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 595px;
   gap: 25px;
 }
 
@@ -271,8 +269,9 @@
 }
 
 .about__title {
+  margin-top: 133px;
   color: #000;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -283,7 +282,7 @@
 
 .about__text {
   color: #000;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -304,6 +303,18 @@
   justify-content: space-between;
 }
 
+.footer__address{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 135% */
+  letter-spacing: 0.2px;
+
+}
+
+
+
 .footer__menu {
   display: flex;
   flex-direction: column;
@@ -318,7 +329,7 @@
 .footer__menu-link {
   color: #000;
   text-align: center;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
